@@ -1,0 +1,168 @@
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    padding: 0 13rem; /* Add 13rem padding on left and right */
+    min-height: 80dvh;
+}
+
+.profile-header {
+    padding: 48px 0; /* Remove horizontal padding since container handles it */
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    border-bottom: 2px solid #2a2a2a;
+}
+
+.profile-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #00593f 0%, #3a3a3a 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: white;
+}
+
+.profile-icon svg {
+    width: 60px;
+    height: 60px;
+}
+
+.profile-name {
+    font-size: 42px;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+}
+
+.profile-info {
+    flex: 1;
+    padding: 48px 0; /* Remove horizontal padding since container handles it */
+    overflow-y: hidden;
+}
+
+.section-header {
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: -0.3px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 48px;
+    max-width: none; /* Remove max-width constraint */
+    margin: 0; /* Remove auto margin */
+    justify-content: center;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background: #2a2a2a;
+    border: 2px solid #3a3a3a;
+    border-radius: 6px;
+    transition:
+        border-color 0.25s ease,
+        background-color 0.25s ease;
+}
+
+.info-item:hover {
+    border-color: #00593f;
+    background: #2f2f2f;
+}
+
+.contact-label {
+    font-size: 13px;
+    color: #999;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.info-value {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.profile-btn {
+    padding: 0.5rem 2.5rem;
+    text-decoration: none;
+    display: block; /* Make button a block element */
+    width: fit-content; /* Only take up content width */
+    margin: 2rem auto; /* Center horizontally with auto margins */
+}
+
+@media (max-width: 1200px) {
+    .profile-container {
+        padding: 0 6rem; /* Reduce padding on smaller screens */
+    }
+
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        padding: 0 1.5rem; /* Further reduce padding on mobile */
+    }
+
+    .profile-header {
+        padding: 32px 0;
+        gap: 20px;
+    }
+
+    .profile-icon {
+        width: 90px;
+        height: 90px;
+    }
+
+    .profile-icon svg {
+        width: 45px;
+        height: 45px;
+    }
+
+    .profile-name {
+        font-size: 28px;
+    }
+
+    .profile-info {
+        padding: 30px 0;
+    }
+
+    .section-title {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+
+    .info-item {
+        padding: 16px;
+        margin-bottom: 20px;
+    }
+
+    .info-value {
+        font-size: 16px;
+    }
+
+    .info-item {
+        border-color: #00593f;
+    }
+}
