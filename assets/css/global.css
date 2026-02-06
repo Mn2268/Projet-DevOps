@@ -121,7 +121,7 @@ html[dir="rtl"] .form-group input {
   animation: none;
 }
 .form-group input.error:hover {
-  border-color: #932626;
+  border-color: #080000;
 }
 .form-group input.success {
   border-color: #00593f;
@@ -142,7 +142,7 @@ html[dir="rtl"] .form-group input {
 .submit-btn {
   width: 100%;
   height: 40px;
-  background: #00593f;
+  background: black;
   color: #fff;
   border: 2px solid #036d4f;
   border-radius: 6px;
